@@ -1,0 +1,43 @@
+{
+  "name": "inventario-repuestos-backend",
+  "version": "1.0.0",
+  "description": "Sistema de gestión de inventario y ventas de repuestos - Backend",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "seed": "node src/scripts/seedData.js",
+    "seed:movements": "node src/scripts/seedMovements.js",
+    "seed:admin": "node src/scripts/createAdmin.js"
+  },
+  "keywords": [
+    "inventario",
+    "repuestos",
+    "ventas",
+    "express"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.78.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-mongo-sanitize": "^2.2.0",
+    "express-rate-limit": "^8.7.0",
+    "express-validator": "^7.0.1",
+    "helmet": "^8.3.0",
+    "jsonwebtoken": "^9.0.2",
+    "mammoth": "^1.11.0",
+    "mongoose": "^8.0.3",
+    "multer": "^2.0.2",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "mongodb-memory-server": "^10.2.3",
+    "nodemon": "^3.0.2"
+  }
+}
